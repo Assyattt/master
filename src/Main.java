@@ -33,8 +33,25 @@ public class Main {
         return AverageValueInArray(length_of_array-1, array);
     }
 
+    public static void IsPrime(int n){
+        if (n==2){
+            System.out.println("Prime");
+            return;
+        }
+        if (n%2==0){
+            System.out.println("Composite");
+            return;
+        }
+        for (int i = 3; i< n/2; i+=2){
+            if (n%i==0){
+                System.out.println("Composite");
+                return;
+            }
+        }
+        System.out.println("Prime");
+    }
     public static void main(String[] args) {
-        float[] numbers = { 3, 2, 1, 4};
-        System.out.println(AverageValueInArray(4, numbers));
+        int number = 931;
+        IsPrime(number);
     }
 }
