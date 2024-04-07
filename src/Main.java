@@ -22,8 +22,19 @@ public class Main {
         return MinInArray(length_of_array-1, array);
     }
 
+    public static float AverageValueInArray(int length_of_array, float[] array){
+        if (array == null) {
+            throw new IllegalArgumentException("Array is empty or it has other length");
+        }
+        if (length_of_array == 1) {
+            return array[length_of_array-1]/array.length;
+        }
+        array[length_of_array-2] += array[length_of_array-1];
+        return AverageValueInArray(length_of_array-1, array);
+    }
+
     public static void main(String[] args) {
-        int[] numbers = {0, 5, 32, 3, 45};
-        System.out.println(MinInArray(5, numbers));
+        float[] numbers = { 3, 2, 1, 4};
+        System.out.println(AverageValueInArray(4, numbers));
     }
 }
