@@ -55,8 +55,19 @@ public class Main {
         if(n==0) return 1;
         return n*NFactorial(n-1);
     }
+
+    public static int NFibonacci(int n) {
+        if (n==2) {
+            return 1;
+        } else if (n==1) {
+            return 1;
+        } else {
+            return NFibonacci(n-2)+NFibonacci(n - 1);
+        }
+    }
+
     public static void main(String[] args) {
-        int number = 12;
-        System.out.println(NFactorial(number));
+        int number = 17;
+        System.out.println(NFibonacci(number));
     }
 }
