@@ -80,13 +80,17 @@ public class Main {
         array[array.length-n]=temp;
         return ReverseArray(n-1, array);
     }
-    public static void main(String[] args) {
-        int[] numbers = {1, 4, 6, 2, 8};
-        int n = 5;
-        int[] reversedArray = ReverseArray(n, numbers);
 
-        for (int i = 0; i < n; i++) {
-            System.out.print(reversedArray[i] + " ");
+    public static int BinomicalCoefficient(int n, int k) {
+        if (k==0 || k==n) {
+            return 1;
+        } else {
+            return BinomicalCoefficient(n-1, k-1)+BinomicalCoefficient(n - 1,k);
         }
+    }
+    public static void main(String[] args) {
+        int k = 3;
+        int n = 7;
+        System.out.println(BinomicalCoefficient(n,k));
     }
 }
