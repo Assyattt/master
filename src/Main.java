@@ -88,9 +88,17 @@ public class Main {
             return BinomicalCoefficient(n-1, k-1)+BinomicalCoefficient(n - 1,k);
         }
     }
+
+    public static int GCD(int a, int b){
+        if (a%b==0){
+            return b;
+        } else {
+            return GCD(b, a%b);
+        }
+    }
     public static void main(String[] args) {
-        int k = 3;
-        int n = 7;
-        System.out.println(BinomicalCoefficient(n,k));
+        int a = 164;
+        int b = 80;
+        System.out.println(GCD(a,b));
     }
 }
