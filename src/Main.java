@@ -50,8 +50,13 @@ public class Main {
         }
         System.out.println("Prime");
     }
+
+    public static int NFactorial(int n) {
+        if(n==0) return 1;
+        return n*NFactorial(n-1);
+    }
     public static void main(String[] args) {
-        int number = 931;
-        IsPrime(number);
+        int number = 12;
+        System.out.println(NFactorial(number));
     }
 }
