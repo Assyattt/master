@@ -70,9 +70,23 @@ public class Main {
         if (n==0) return 1;
         return a*NPower(a,n-1);
     }
+
+    public static int[] ReverseArray(int n, int[] array){
+        if (n==array.length/2) {
+            return array;
+        }
+        int temp = array[n-1];
+        array[n-1] = array[array.length-n];
+        array[array.length-n]=temp;
+        return ReverseArray(n-1, array);
+    }
     public static void main(String[] args) {
-        int number = 14;
-        int n=3;
-        System.out.println(NPower(number, n));
+        int[] numbers = {1, 4, 6, 2, 8};
+        int n = 5;
+        int[] reversedArray = ReverseArray(n, numbers);
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(reversedArray[i] + " ");
+        }
     }
 }
