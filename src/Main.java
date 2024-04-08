@@ -66,8 +66,13 @@ public class Main {
         }
     }
 
+    public static int NPower(int a, int n){
+        if (n==0) return 1;
+        return a*NPower(a,n-1);
+    }
     public static void main(String[] args) {
-        int number = 17;
-        System.out.println(NFibonacci(number));
+        int number = 14;
+        int n=3;
+        System.out.println(NPower(number, n));
     }
 }
