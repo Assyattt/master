@@ -2,19 +2,27 @@
 
 This Java program demonstrates various mathematical operations, such as checking if a string consists of digits, finding the minimum value in an array, calculating the average value in an array, checking if a number is prime, calculating the factorial of a number, calculating Fibonacci numbers, calculating a number raised to a power, reversing an array, calculating binomial coefficients, and calculating the greatest common divisor (GCD) of two numbers.
 
-##Installation Instructions
+## Installation Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
+```sh
 git clone https://github.com/Assyattt/master.git
+```
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
+```sh
 cd master
+```
 
-3. Compile the program:
+4. Compile the program:
+```bash
 javac Main.java
+```
 
-4. Run the program:
+6. Run the program:
+```bash
 java Main
+```
 
 ## How to Use
 
