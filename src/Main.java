@@ -16,7 +16,7 @@ public class Main {
 
 //    MinInArray(int length_of_array, int[] array): This method finds the minimum value in an array.
 //    It uses a recursive approach but doesn't reduce the size of the array with each recursive call,
-//    leading to a time complexity of O(n^2), where n is the length of the array.
+//    leading to a time complexity of O(n), where n is the length of the array.
 
     public static int MinInArray(int length_of_array, int[] array){
         if (array == null) {
@@ -33,7 +33,7 @@ public class Main {
 
 //    AverageValueInArray(int length_of_array, float[] array): This method calculates the average value of elements in an array.
 //    Similar to the previous method, it uses a recursive approach without reducing the size of the array,
-//    resulting in a time complexity of O(n^2), where n is the length of the array.
+//    resulting in a time complexity of O(n), where n is the length of the array.
 
     public static float AverageValueInArray(int length_of_array, float[] array){
         if (array == null) {
@@ -47,7 +47,7 @@ public class Main {
     }
 
 //    IsPrime(int n): This method checks if a number is prime.
-//    It has a time complexity of O(sqrt(n)), as it iterates up to the square root of n to check for divisors.
+//    It has a time complexity of O(n), as it iterates up to the square root of n to check for divisors.
     public static void IsPrime(int n){
         if (n==2){
             System.out.println("Prime");
